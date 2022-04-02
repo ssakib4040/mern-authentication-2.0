@@ -28,23 +28,22 @@ const PrivateScreen = ({ history }) => {
 
   return (
     <div className="mt-3">
-      s
-      {/* {error ? (
-        <Alert variant="danger">{error}</Alert>
+      {error ? (
+        <div className="error">{error}</div>
       ) : (
-        <Alert variant="success">
-          {privateData}{" "}
-          <Button
-            variant="danger"
+        <div className="success">
+          {privateData}
+          <button
+            className="auth-btn"
             onClick={() => {
               localStorage.removeItem("authToken", null);
               history.push("/");
             }}
           >
             Logout
-          </Button>{" "}
-        </Alert>
-      )} */}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

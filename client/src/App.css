@@ -61,6 +61,15 @@ form p a {
   color: #8a53ed;
 }
 
+.auth-btn {
+  background: red;
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
 .error {
   border: 1px solid #e94f4f;
   padding: 1rem;
